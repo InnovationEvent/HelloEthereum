@@ -30,8 +30,11 @@ contract('HelloEthereum', function(accounts) {
       return hello_ethereum.getNames.call();
     }).then(function(result){
       // Result is an array of bytes32
-      console.log("Last Caller=",convertToAscii(result[0]));
-      console.log("Caller Name=",convertToAscii(result[1]));
+      // console.log("Last Caller=",convertToAscii(result[0]));
+      // console.log("Caller Name=",convertToAscii(result[1]));
+
+      assert.equal(convertToAscii(result[0]), "Jane","Bad name received");
+      assert.equal(convertToAscii(result[1]), "John Doe","Bad name received");
     });
   });
 });
