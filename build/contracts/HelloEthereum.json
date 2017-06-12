@@ -1,0 +1,89 @@
+{
+  "contract_name": "HelloEthereum",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "name",
+          "type": "bytes32"
+        }
+      ],
+      "name": "hello",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getNames",
+      "outputs": [
+        {
+          "name": "lastCaller",
+          "type": "bytes32"
+        },
+        {
+          "name": "callerName",
+          "type": "bytes32"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "lastCallerName",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "payable": false,
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "name",
+          "type": "bytes32"
+        }
+      ],
+      "name": "HelloInvoked",
+      "type": "event"
+    }
+  ],
+  "unlinked_binary": "0x606060405234610000575b7f6e6f742d736574000000000000000000000000000000000000000000000000006000555b5b61014a8061003f6000396000f300606060405263ffffffff60e060020a600035041663b391e505811461003a578063cd838f0f1461004c578063e841737a14610072575b610000565b346100005761004a600435610091565b005b34610000576100596100eb565b6040805192835260208301919091528051918290030190f35b346100005761007f610118565b60408051918252519081900360200190f35b60405181907fdac78761d47165092660bfe0fda9004c944cf4130cf416e4a206c5fe7aaf0b9890600090a273ffffffffffffffffffffffffffffffffffffffff331660009081526001602052604081208290558190555b50565b6000805473ffffffffffffffffffffffffffffffffffffffff3316825260016020526040909120545b9091565b600054815600a165627a7a72305820100a169eee68d59144f2ed08938b72c8593b55b949fd60afb5e470b22c8d25c80029",
+  "networks": {
+    "1497271374095": {
+      "events": {
+        "0xdac78761d47165092660bfe0fda9004c944cf4130cf416e4a206c5fe7aaf0b98": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "name",
+              "type": "bytes32"
+            }
+          ],
+          "name": "HelloInvoked",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0x8897f1f92ac6ec511b6ffd82b34780a746cb7af9",
+      "updated_at": 1497271917016
+    }
+  },
+  "schema_version": "0.0.5",
+  "updated_at": 1497273607630
+}

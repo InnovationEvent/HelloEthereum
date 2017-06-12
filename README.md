@@ -1,0 +1,1 @@
+Please follow the instructions provided in the PDF / Companion guide
