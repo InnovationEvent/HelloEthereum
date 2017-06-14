@@ -44,5 +44,7 @@ contract HelloEthereum {
     lastCaller = lastCallerName;
     callerName = addressNames[msg.sender];
     
+    // optional
+    return (lastCaller, callerName);
   }
 }
