@@ -8,7 +8,11 @@ pragma solidity ^0.4.4;
  * Everyone can vote only once
  * Voting ends after fixed time
  * 
- * Step 2 Set a time limit to voting
+ * Step 2 Generate an event everytime someone votes
+ *        event   Voted(address who, bool yesNo);
+ *
+ * Step 3 Set a time limit to voting
+ *
  **/
 contract Voting {
 
